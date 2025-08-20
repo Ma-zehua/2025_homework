@@ -1,0 +1,138 @@
+.row {
+  min-height: 40px;
+}
+
+
+
+.col-auto {
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .col-auto {
+    border-radius: 8px;
+  }
+}
+
+.row {
+  min-height: 40px;
+}
+
+.col-auto {
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .col-auto {
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-auto {
+    border-radius: 10px;
+  }
+}
+
+.col-auto:hover {
+  background-color: white !important;
+  color: #ce374a !important;
+  transition: all 0.3s ease;
+}
+
+.about-us {
+  text-indent: 2em;
+  margin-bottom: 0;
+}
+
+.container .row .col-md-8 a {
+  text-decoration: none !important;
+}
+
+.container .row .col-md-8 a:hover {
+  text-decoration: underline !important;
+}
+
+.hs {
+  border-left: 0.5rem solid #eeeeee;
+}
+
+@media (max-width: 768px) {
+  .huise {
+    color: #9d9b9f;
+    left: 1em;
+  }
+}
+
+.huise {
+  font-size: large;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 2rem;
+  color: #9d9b9f;
+}
+
+.huise-buttom {
+  font-size: small;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #9d9b9f;
+  padding-left: 1.5rem;
+}
+.container .row .col-md-4 li::before{
+  content: "\25B6";
+  font-size: 1.2em;
+  margin-right: 0.5em;
+  color: #ce374a;
+  font-size: small;
+}
+.container .row .col-md-4 li{
+  list-style-type: none;
+}
+.container .row .col-md-4 li a{
+  font-size: 1rem;
+  color: #ce374a;
+  text-decoration: none;
+  display: block;
+  text-align: left !important;
+  position: relative;
+  transform: translate(5%,-55%);
+}
+.container .row .col-md-4 li a:hover{
+  text-decoration: underline;
+}
+.col-md-3 .container .row a{
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.col-md-3 .container .row a:hover{
+  color:#306193;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.col-md-3 .container .row img{
+  width: 100% !important;
+}
+.row .ww{
+  color: black !important;
+  background-color: #ececec;
+}
+.row .ww:hover{
+  background-color: #777777;
+}
+.col-md-2 a{
+  color:#a7a5a2;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+.col-md-2 a:hover{
+  color: white;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
