@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School of Computer and Information Engineering - Henan University</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery (required for some components) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="CSS/body.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/main_carousel.css">
+    <link rel="stylesheet" href="CSS/about_section.css">
+    <link rel="stylesheet" href="CSS/news-info-section.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    
+    <!-- Initialize AOS Animation -->
+    <script src="JS/AOS.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./Utilities/imgs/henulogo.png" alt="Henan University Logo">
+                <span class="d-none d-md-inline"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="admissionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admission
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
+                            <li><a class="dropdown-item" href="#">Undergraduate Program</a></li>
+                            <li><a class="dropdown-item" href="#">Master Program</a></li>
+                            <li><a class="dropdown-item" href="#">PhD Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chinese</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Banner -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Utilities/imgs/banner0.jpg" class="d-block w-100" alt="Campus View">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to School of Computer and Information Engineering</h2>
+                    <p>Henan University - Cultivating talents for the future</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Utilities/imgs/banner1.jpg" class="d-block w-100" alt="Students">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Excellence in Education</h2>
+                    <p>Providing quality education in computer science and information technology</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Utilities/imgs/banner2.png" class="d-block w-100" alt="Research">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Leading in Research</h2>
+                    <p>Advancing knowledge through innovative research</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Section -->
+    <section class="container py-5" data-aos="fade-up">
+        <h2 class="text-center section-title">About Us</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="./Utilities/imgs/xueyuan.png" alt="School Building" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-8">
+                <p class="lead">
+                    The school has a first level doctoral degree in Software Engineering discipline, a secondary level doctorate degree in Remote Sensing Information Science and Technology discipline, 3 first level master's degree in Computer Science and Technology discipline, Software Engineering discipline and Control Science and Engineering discipline, 5 undergraduate disciplines in Computer Science and Technology, Data Science and Big Data Technology, Network Engineering, Information Security and Automation.
+                    <a href="http://cs.henu.edu.cn/english/about.htm" class="text-primary">Read More</a>
+                </p>
+               
+                
+                <blockquote class="blockquote mt-4">
+                    <p>"Keep pace with the times, develop and innovate, and turn Henan University into a national top university"</p>
+                    <p class="blockquote-footer">Jiang Zemin, <cite title="Source">April 7, 2004</cite></p>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- News and Information Section -->
+    <section class="container py-5">
+        <div class="row">
+            <!-- News Column -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card news-card">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">News</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none">The 11th "Xuejiao Cup" University Student Programming Competition Award List Announced</a>
+                                <small class="text-muted d-block">May 15, 2023</small>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none">School Hosts Artificial Intelligence Academic Lecture</a>
+                                <small class="text-muted d-block">April 28, 2023</small>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none">Research Team Publishes Paper in Top Journal</a>
+                                <small class="text-muted d-block">April 10, 2023</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recruitment Column -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card news-card">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="h5 mb-0">Recruitment</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none">Postdoctoral Fellows Recruitment for School of Computer and Information Engineering</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none">The Doctoral Course in School of Computer and Information Engineering</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none">Faculty Positions Available in Computer Science</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Location Column -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card news-card">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="h5 mb-0">Location</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Utilities/imgs/location.png" alt="Campus Map" class="img-fluid mb-3 rounded">
+                        <p >School of Computer and Information Engineering<br>
+                        Henan University<br>
+                        Minglun Street 85, Kaifeng<br>
+                        Henan Province, China</p>
+                        <a href="#" class="btn btn-sm btn-outline-info">View Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Provincial Platform Section -->
+    <section class="container py-5 bg-light rounded">
+        <h2 class="text-center section-title">Provincial Platform</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="./Utilities/imgs/bigdate.jpg" class="card-img-top" alt="Big Data Lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Henan Key Laboratory of Big Data Analysis and Processing</h5>
+                        <p class="card-text">Research on big data technologies and applications.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card h-100">
+                    <img src="./Utilities/imgs/kjxx.png" class="card-img-top" alt="Spatial Information Lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Henan Laboratory of Spatial Information Processing and Engineering</h5>
+                        <p class="card-text">Research on spatial information technologies.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card h-100">
+                    <img src="./Utilities/imgs/clw.png" class="card-img-top" alt="Car Networking Lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Henan Car Networking Technology Collaboration</h5>
+                        <p class="card-text">International joint research on car networking technologies.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card h-100">
+                    <img src="./Utilities/imgs/znyy.png" class="card-img-top" alt="Research Lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Other Research Platforms</h5>
+                        <p class="card-text">Various research platforms and laboratories in the school.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Minglun Street 85, Kaifeng, Henan Province, China</p>
+                        <p><i class="fas fa-phone me-2"></i> +86-378-12345678</p>
+                        <p><i class="fas fa-envelope me-2"></i> cs@henu.edu.cn</p>
+                    </address>
+                </div>
+                <div class="col-md-4 mb-4 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>About</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Admission</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Research</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="text-center-footer">&copy;All copyright © school of computer and information engineering henan university<br>
+                        Technical support: 107 Website studio
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
