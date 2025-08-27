@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #B60E4E;
+    --secondary-color: #343a40;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 40vh;
+    }
+    
+    .navbar-brand img {
+        height: 40px;
+    }
+}
